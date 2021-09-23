@@ -1,6 +1,6 @@
 package com.csc205.project2;
 
-public class Sphere {
+public class Sphere extends Shape {
 
     private double radius;
 
@@ -9,9 +9,9 @@ public class Sphere {
         this.radius = 0.0;
     }
 
-    public Sphere(double v) {
+    public Sphere(double r) {
         super();
-        this.radius = v;
+        this.radius = r;
     }
 
     public double getRadius() {
@@ -27,7 +27,7 @@ public class Sphere {
     }
 
     public double volume() {
-        return (4.0/3.0) * Math.PI * Math.pow(radius, 3);
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
     }
 
     @Override
